@@ -38,7 +38,7 @@ jobs:
       - name: Download checkstyle.xml
         run: curl -o checkstyle.xml https://static.playlegend.net/checkstyle.xml
       - name: Run Checkstyle
-        uses: nikitasavinov/checkstyle-action@f999c929c59da398aa0ea49c98d4b3056b03ca46
+        uses: nikitasavinov/checkstyle-action@36b69f4cd04e8ee165c046237702fb1b68b1a89f
         with:
           checkstyle_config: checkstyle.xml
           github_token: ${{ secrets.githubToken }}
